@@ -63,7 +63,7 @@
   <button type="submit">送信</button>
 
   
-  <title>服装診断</title>
+  <title>☆服の提案☆</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="index.css">
 
@@ -72,52 +72,108 @@
 <div class="choose_box">
       <!-- 質問一覧 -->
       <div class="app-theme">
-        <p>服装診断アンケート(全5問)</p>
+        <p>服装診断アンケート(全10問)</p>
       </div>
-      <!-- 質問1 -->
+    <!-- 質問1 -->
       <div id="q_01" class="fit">
-        <p>質問1: あなたは普段　</p>
+          <p>これから簡単な質問をいくつかします</p>
+        <p>質問1:長袖？半袖？ </p>
         <ul>
-          <li><a class="btn" href="#q_02" data-value="a">スカートをはく</a></li>
-          <li><a class="btn" href="#q_02" data-value="b">ズボンをはく</a></li>
+          <li><a class="btn" href="#q_02" data-value="a">長袖</a></li>
+          <li><a class="btn" href="#q_02" data-value="b">半袖</a></li>
         </ul>
       </div>
-
-      <!-- 質問2 -->
+    
+    
+    <!-- 質問2 -->
       <div id="q_02" style="display: none;">
-        <p>質問2:　あなたは普段</p>
+        <p>質問2: 雨？晴れ？</p>
         <ul>
-          <li><a class="btn" href="#q_03" data-value="a">足を出す</a></li>
-          <li><a class="btn" href="#q_03" data-value="b">足を出さない</a></li>
+          <li><a class="btn" href="#q_03" data-value="a">雨</a></li>
+          <li><a class="btn" href="#q_03" data-value="b">晴れ</a></li>
         </ul>
-      </div>
-
-      <!-- 質問3 -->
+    </div>
+    
+    
+    <!-- 質問3 -->
       <div id="q_03" style="display: none;">
-        <p>質問3:　あなたは普段</p>
+        <p>質問3:スカート？ズボン？ </p>
         <ul>
-          <li><a class="btn" href="#q_04" data-value="a">柄物をきる</a></li>
-          <li><a class="btn" href="#q_04" data-value="b">無地のものをきる</a></li>
+          <li><a class="btn" href="#q_04" data-value="a">スカート</a></li>
+          <li><a class="btn" href="#q_04" data-value="b">ズボン</a></li>
+        </ul>
+      </div>
+    
+    <!-- 質問4 -->
+      <div id="q_04" style="display: none;">
+        <p>質問4:ボーイッシュ？ガーリー？ </p>
+        <ul>
+          <li><a class="btn" href="#q_05" data-value="a">ボーイッシュ</a></li>
+          <li><a class="btn" href="#q_05" data-value="b">ガーリー</a></li>
+        </ul>
+      </div>
+    
+    
+    
+    
+    
+    
+      <!-- 質問5 -->
+      <div id="q_05" class="fit">
+        <p>質問5: 暑がり？寒がり？</p>
+        <ul>
+          <li><a class="btn" href="#q_06" data-value="a">暑がり</a></li>
+          <li><a class="btn" href="#q_06" data-value="b">寒がり</a></li>
         </ul>
       </div>
 
-      <!-- 質問4 -->
-      <div id="q_04" style="display: none;">
+      <!-- 質問6 -->
+      <div id="q_06" style="display: none;">
+        <p>質問6:　あなたは普段</p>
+        <ul>
+          <li><a class="btn" href="#q_07" data-value="a">足を出す</a></li>
+          <li><a class="btn" href="#q_07" data-value="b">足を出さない</a></li>
+        </ul>
+      </div>
+
+      <!-- 質問7 -->
+      <div id="q_07" style="display: none;">
+        <p>質問7:　あなたは普段</p>
+        <ul>
+          <li><a class="btn" href="#q_08" data-value="a">柄物をきる</a></li>
+          <li><a class="btn" href="#q_08" data-value="b">無地のものをきる</a></li>
+        </ul>
+      </div>
+
+      <!-- 質問8 -->
+      <div id="q_08" style="display: none;">
         <p>質問4:　あなたは身長が</p>
         <ul>
-          <li><a class="btn" href="#q_05" data-value="a">大きめ</a></li>
-          <li><a class="btn" href="#q_05" data-value="b">小さめ</a></li>
+          <li><a class="btn" href="#q_09" data-value="a">大きめ</a></li>
+          <li><a class="btn" href="#q_09" data-value="b">小さめ</a></li>
+        </ul>
+      </div>
+    
+        
+    <!-- 質問9 -->
+      <div id="q_09" style="display: none;">
+        <p>質問9:　あなたは身長が</p>
+        <ul>
+          <li><a class="btn" href="#q_10" data-value="a">大きめ</a></li>
+          <li><a class="btn" href="#q_10" data-value="b">小さめ</a></li>
+        </ul>
+      </div>
+    
+
+      <!-- 質問10 -->
+      <div id="q_10" style="display: none;">
+        <p>質問10:体のラインが</p>
+        <ul>
+          <li><a class="btn end" data-value="a">出る方が好み</a></li>
+          <li><a class="btn end" data-value="b">出ないほうが好み</a></li>
         </ul>
       </div>
 
-      <!-- 質問5 -->
-      <div id="q_05" style="display: none;">
-        <p>質問5:　あなたはどちらかというと</p>
-        <ul>
-          <li><a class="btn end" data-value="a">細め</a></li>
-          <li><a class="btn end" data-value="b">ふくよか</a></li>
-        </ul>
-      </div>
 
 
 
@@ -125,16 +181,18 @@
   <!-- 回答の答え1 -->
      <div id="answer_01" class="result" style="display: none;">
       <div class="result_theme ">
-            <p>あなたは</p>
+            <p>あなたには</p>
       </div>
       <div class="result_type0 ">
-            <h4>ガーリータイプ</h4>
+            <h4>以下の服をおすすめします</h4>
       </div>
       <div class="result_discription0">
-        <h2>可愛めの服をおすすめします</h2>
+        <h2></h2>
         <p>
          <img src="https://c.imgz.jp/883/65563883/65563883_b_11_500.jpg">
         </p>
+          <p>なお、以下のコードを打ち込むと他にも表示されます。</p>
+          <p>woman's fashion, winter,short hair</p>
       </div>
        <div class="return-btn">
         <a class="return" href="index.html">もう一度診断し直す</a>
@@ -146,16 +204,20 @@
   <!-- 回答の答え2 -->
      <div id="answer_02" style="display: none;">
           <div class="result_theme ">
-            <p>あなたは</p>
+            <p>あなたには</p>
       </div>
       <div class="result_type1 ">
-            <h4>スポーティータイプ</h4>
+            <h4>以下の服をおすすめします</h4>
       </div>
       <div class="result_discription1">
-        <h2>かっこいい感じの服をおすすめします</h2>
+        <h2></h2>
         <p>
           <img src="https://up.gc-img.net/post_img/2020/07/7yuXFnsd2hgnKtR_3ts4J_59.jpeg">
         </p>
+          
+          <p>なお、以下のコードを打ち込むと他にも表示されます。</p>
+          <p>woman's fashion, summer,short hair</p>
+         
       </div>
        <div class="return-btn">
         <a class="return" href="index.html">もう一度診断し直す</a>
