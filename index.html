@@ -1,0 +1,174 @@
+<html>
+<head>
+    
+<body>    
+  <div class = "date">
+   <label for="date">日付</label>
+   <input type="date" name="date" id="date" min="2022-10-18" max="2022-10-27">>
+  </div>
+  <div class = "time">
+   <label for="time">時刻</label>
+   <input type="time" name="time" id="time">
+  </div>
+    
+    
+    
+    <script>
+    window.addEventListener("DOMContentLoaded", function(){
+      var areaSelect=document.getElementById("area");
+      var prefSelect=document.getElementById("pref");
+        
+      var prefList=[
+        ["北海道","青森","岩手","宮城","秋田","山形","福島"],
+        ["東京","茨城","栃木","群馬","埼玉","千葉","神奈川"],
+        ["新潟","富山","石川","福井","山梨","長野","岐阜","静岡","愛知"],
+        ["京都","大阪","三重","滋賀","兵庫","奈良","和歌山"],
+        ["鳥取","島根","岡山","広島","山口"],
+        ["徳島","香川","愛媛","高知"],
+        ["福島","佐賀","長崎","大分","熊本","宮崎","鹿児島","沖縄"]
+       ];
+     
+      
+      areaSelect.addEventListener("change",function(event){
+        prefSelect.innerHTML="";
+        if(this.value=="")return;
+        var list=prefList[this.value];
+        for(var i=0; i<list.length; i++){
+          var option = document.createElement('option');
+          option.value=i;
+          option.text=list[i];
+          prefSelect.appendChild(option);
+        }
+       }
+    );
+  });
+  </script>
+ 
+        
+
+  <select id = "area">
+     <label for="">場所</label>
+     <option value="">選択してください</option>
+     <option value="0">北海道・東北地方</option>
+     <option value="1">関東地方</option>
+     <option value="2">中部地方</option>
+     <option value="3">近畿地方</option>
+     <option value="4">中国地方</option>
+     <option value="5">四国地方</option>
+     <option value="6">九州・沖縄地方</option>
+    </select>
+  <select id ="pref">
+      <option value="">地方を選択してください</option>
+  </select>
+  <button type="submit">送信</button>
+
+  
+  <title>服装診断</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+</script>
+
+<div class="choose_box">
+      <!-- 質問一覧 -->
+      <div class="app-theme">
+        <p>服装診断アンケート(全5問)</p>
+      </div>
+      <!-- 質問1 -->
+      <div id="q_01" class="fit">
+        <p>質問1: あなたは普段　</p>
+        <ul>
+          <li><a class="btn" href="#q_02" data-value="a">スカートをはく</a></li>
+          <li><a class="btn" href="#q_02" data-value="b">ズボンをはく</a></li>
+        </ul>
+      </div>
+
+      <!-- 質問2 -->
+      <div id="q_02" style="display: none;">
+        <p>質問2:　あなたは普段</p>
+        <ul>
+          <li><a class="btn" href="#q_03" data-value="a">足を出す</a></li>
+          <li><a class="btn" href="#q_03" data-value="b">足を出さない</a></li>
+        </ul>
+      </div>
+
+      <!-- 質問3 -->
+      <div id="q_03" style="display: none;">
+        <p>質問3:　あなたは普段</p>
+        <ul>
+          <li><a class="btn" href="#q_04" data-value="a">柄物をきる</a></li>
+          <li><a class="btn" href="#q_04" data-value="b">無地のものをきる</a></li>
+        </ul>
+      </div>
+
+      <!-- 質問4 -->
+      <div id="q_04" style="display: none;">
+        <p>質問4:　あなたは身長が</p>
+        <ul>
+          <li><a class="btn" href="#q_05" data-value="a">大きめ</a></li>
+          <li><a class="btn" href="#q_05" data-value="b">小さめ</a></li>
+        </ul>
+      </div>
+
+      <!-- 質問5 -->
+      <div id="q_05" style="display: none;">
+        <p>質問5:　あなたはどちらかというと</p>
+        <ul>
+          <li><a class="btn end" data-value="a">細め</a></li>
+          <li><a class="btn end" data-value="b">ふくよか</a></li>
+        </ul>
+      </div>
+
+
+
+<!-- ここから以下回答 -->
+  <!-- 回答の答え1 -->
+     <div id="answer_01" class="result" style="display: none;">
+      <div class="result_theme ">
+            <p>あなたは</p>
+      </div>
+      <div class="result_type0 ">
+            <h4>ガーリータイプ</h4>
+      </div>
+      <div class="result_discription0">
+        <h2>可愛めの服をおすすめします</h2>
+        <p>
+         <img src="https://c.imgz.jp/883/65563883/65563883_b_11_500.jpg">
+        </p>
+      </div>
+       <div class="return-btn">
+        <a class="return" href="index.html">もう一度診断し直す</a>
+       </div>
+     </div>
+
+
+
+  <!-- 回答の答え2 -->
+     <div id="answer_02" style="display: none;">
+          <div class="result_theme ">
+            <p>あなたは</p>
+      </div>
+      <div class="result_type1 ">
+            <h4>スポーティータイプ</h4>
+      </div>
+      <div class="result_discription1">
+        <h2>かっこいい感じの服をおすすめします</h2>
+        <p>
+          <img src="https://up.gc-img.net/post_img/2020/07/7yuXFnsd2hgnKtR_3ts4J_59.jpeg">
+        </p>
+      </div>
+       <div class="return-btn">
+        <a class="return" href="index.html">もう一度診断し直す</a>
+       </div>
+     </div>
+
+ </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+ 
+</body>
+</head>
+</html>
